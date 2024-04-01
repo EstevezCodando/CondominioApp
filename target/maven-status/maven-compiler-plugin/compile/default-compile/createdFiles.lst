@@ -1,0 +1,4 @@
+armazemApp\model\domain\Fornecedor.class
+armazemApp\model\domain\Endereco.class
+arrmazemApp\App.class
+armazemApp\model\controller\FornecedorController.class
