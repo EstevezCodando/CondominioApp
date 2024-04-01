@@ -1,6 +1,6 @@
 package controleCondominioApp.model.domain;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,7 +9,7 @@ public class Funcionario extends Pessoa {
 	private String matricula;
 	private String turno;
 	private Float salario;
-	private LocalDate dataAdmissao;
+	private LocalDateTime dataAdmissao;
 	private List<Veiculo> veiculo;
 
 	public enum cargo {
@@ -22,7 +22,7 @@ public class Funcionario extends Pessoa {
 
 
 	public Funcionario(String nome, String telefone, String cpf, String email, Endereco endereco, cargo cargo, String matricula,
-			String turno, Float salario, LocalDate dataAdmissao, List<Veiculo> veiculo) {
+			String turno, Float salario, LocalDateTime dataAdmissao, List<Veiculo> veiculo) {
 		super(nome, telefone, cpf, email, endereco);
 		this.cargo = cargo;
 		this.matricula = matricula;
@@ -81,11 +81,11 @@ public class Funcionario extends Pessoa {
 		this.salario = salario;
 	}
 
-	public LocalDate getDataAdmissao() {
+	public LocalDateTime getDataAdmissao() {
 		return dataAdmissao;
 	}
 
-	public void setDataAdmissao(LocalDate dataAdmissao) {
+	public void setDataAdmissao(LocalDateTime dataAdmissao) {
 		this.dataAdmissao = dataAdmissao;
 	}
 	

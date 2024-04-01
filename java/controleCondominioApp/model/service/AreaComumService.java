@@ -3,7 +3,6 @@ package controleCondominioApp.model.service;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Optional;
 
 import controleCondominioApp.model.domain.AreaComum;
 
@@ -16,8 +15,8 @@ public class AreaComumService {
 		areasComuns.put(areaComum.getId(), areaComum);
 	}
 
-	public static Optional<AreaComum> obterPorId(Integer id) {
-		return Optional.ofNullable(areasComuns.get(id));
+	public static AreaComum obterPorId(Integer id) {
+		return areasComuns.get(id);
 	}
 
 	public static Collection<AreaComum> obterLista() {

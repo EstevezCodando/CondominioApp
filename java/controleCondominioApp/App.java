@@ -3,6 +3,7 @@ package controleCondominioApp;
 import static spark.Spark.staticFiles;
 
 import controleCondominioApp.model.controller.AreaComumController;
+import controleCondominioApp.model.controller.CondominioController;
 import controleCondominioApp.model.controller.EnderecoController;
 import controleCondominioApp.model.controller.FuncionarioController;
 import controleCondominioApp.model.controller.MoradorController;
@@ -75,6 +76,13 @@ public class App {
 		Spark.post("/veiculos/incluir", VeiculoController.incluir);
 		Spark.delete("/veiculos/:id/excluir", VeiculoController.excluir);
 		Spark.get("/veiculos/:id", VeiculoController.obterPorId);
+		
+		//Condominio
+		Spark.get("/condominios/lista", CondominioController.obterLista);
+		Spark.post("/condominios/incluir", CondominioController.incluir);
+		Spark.delete("/condominios/:id/excluir", CondominioController.excluir);
+		Spark.get("/condominios/:id", CondominioController.obterPorId);
+
 
 	}
 

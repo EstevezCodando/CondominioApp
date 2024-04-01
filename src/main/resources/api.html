@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Controle Condomínio APP - Uso da API</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+
+		<nav>
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="condominios/lista">Condomínios</a></li>
+				<li><a href="moradores/lista">Moradores</a></li>
+				<li><a href="funcionarios/lista">Funcionários</a></li>
+				<li><a href="visitantes/lista">Visitantes</a></li>
+				<li><a href="areacomuns/lista">Áreas Comuns</a></li>
+				<li><a href="reserva/lista">Reservas</a></li>
+				<li><a href="api.html">Uso da API</a></li>
+				<li><a href="sparkjava">SparkJava</a></li>
+			</ul>
+		</nav>
+		<img src="img/infnet_logo.jpg" alt="Instituto Infnet Logo"
+			class="responsive-logo">
+	</header>
+
+	<section id="api">
+		<h1>Uso da API</h1>
+		<p>Esta seção descreve os serviços disponíveis através da API do
+			Controle Condomínio APP.</p>
+		<p>Tenha em mente que apenas os metodos GET funcionam utilizando o browser, para os demais metodos é necessario usar outros recursos como o POSTMAN</p>>
+
+		<h2>Classes e Serviços</h2>
+
+		<h3>Morador</h3>
+		<p>
+			<a href="http://localhost:8080/moradores/lista"><b>GET
+					/moradores/lista</b></a>: Retorna uma lista de todos os moradores.
+		</p>
+		<p>
+			<a href="http://localhost:8080/moradores/incluir"><b>POST
+					/moradores/incluir</b></a>: Inclui um novo morador.
+		</p>
+		<p>
+			<a href="http://localhost:8080/moradores/:id/excluir"><b>DELETE
+					/moradores/:id/excluir</b></a>: Exclui um morador pelo ID.
+		</p>
+		<p>
+			<a href="http://localhost:8080/moradores/:id"><b>GET
+					/moradores/:id</b></a>: Retorna os detalhes de um morador pelo ID.
+		</p>
+
+		<h3>Veículo</h3>
+		<p>
+			<a href="http://localhost:8080/veiculos/lista"><b>GET
+					/veiculos/lista</b></a>: Retorna uma lista de todos os veículos.
+		</p>
+		<p>
+			<a href="http://localhost:8080/veiculos/incluir"><b>POST
+					/veiculos/incluir</b></a>: Inclui um novo veículo.
+		</p>
+		<p>
+			<a href="http://localhost:8080/veiculos/:id/excluir"><b>DELETE
+					/veiculos/:id/excluir</b></a>: Exclui um veículo pelo ID.
+		</p>
+		<p>
+			<a href="http://localhost:8080/veiculos/:id"><b>GET
+					/veiculos/:id</b></a>: Retorna os detalhes de um veículo pelo ID.
+		</p>
+
+		<h3>Funcionário</h3>
+		<p>
+			<a href="http://localhost:8080/funcionarios/lista"><b>GET
+					/funcionarios/lista</b></a>: Retorna uma lista de todos os funcionários.
+		</p>
+		<p>
+			<a href="http://localhost:8080/funcionarios/incluir"><b>POST
+					/funcionarios/incluir</b></a>: Inclui um novo funcionário.
+		</p>
+		<p>
+			<a href="http://localhost:8080/funcionarios/:id/excluir"><b>DELETE
+					/funcionarios/:id/excluir</b></a>: Exclui um funcionário pelo ID.
+		</p>
+		<p>
+			<a href="http://localhost:8080/funcionarios/:id"><b>GET
+					/funcionarios/:id</b></a>: Retorna os detalhes de um funcionário pelo ID.
+		</p>
+
+		<h3>Visitante</h3>
+		<p>
+			<a href="http://localhost:8080/visitantes/lista"><b>GET
+					/visitantes/lista</b></a>: Retorna uma lista de todos os visitantes.
+		</p>
+		<p>
+			<a href="http://localhost:8080/visitantes/incluir"><b>POST
+					/visitantes/incluir</b></a>: Inclui um novo visitante.
+		</p>
+		<p>
+			<a href="http://localhost:8080/visitantes/:id/excluir"><b>DELETE
+					/visitantes/:id/excluir</b></a>: Exclui um visitante pelo ID.
+		</p>
+		<p>
+			<a href="http://localhost:8080/visitantes/:id"><b>GET
+					/visitantes/:id</b></a>: Retorna os detalhes de um visitante pelo ID.
+		</p>
+
+		<h3>Condomínio</h3>
+		<p>
+			<a href="http://localhost:8080/condominios/lista"><b>GET
+					/condominios/lista</b></a>: Retorna uma lista de todos os condomínios.
+		</p>
+		<p>
+			<a href="http://localhost:8080/condominios/:id/excluir"><b>DELETE
+					/condominios/:id/excluir</b></a>: Exclui um condomínio pelo ID.
+		</p>
+		<p>
+			<a href="http://localhost:8080/condominios/:id"><b>GET
+					/condominios/:id</b></a>: Retorna os detalhes de um condomínio pelo ID.
+		</p>
+
+		<h3>Área Comum</h3>
+		<p>
+			<a href="http://localhost:8080/areascomuns/lista"><b>GET
+					/areascomuns/lista</b></a>: Retorna uma lista de todas as áreas comuns.
+		</p>
+		<p>
+			<a href="http://localhost:8080/areascomuns/incluir"><b>POST
+					/areascomuns/incluir</b></a>: Inclui uma nova área comum.
+		</p>
+		<p>
+			<a href="http://localhost:8080/areascomuns/:id/excluir"><b>DELETE
+					/areascomuns/:id/excluir</b></a>: Exclui uma área comum pelo ID.
+		</p>
+		<p>
+			<a href="http://localhost:8080/areascomuns/:id"><b>GET
+					/areascomuns/:id</b></a>: Retorna os detalhes de uma área comum pelo ID.
+		</p>
+
+		<h3>Reserva de Área Comum</h3>
+		<p>
+			<a href="http://localhost:8080/reservasareascomuns/lista"><b>GET
+					/reservasareascomuns/lista</b></a>: Retorna uma lista de todas as reservas
+			de áreas comuns.
+		</p>
+		<p>
+			<a href="http://localhost:8080/reservasareascomuns/incluir"><b>POST
+					/reservasareascomuns/incluir</b></a>: Inclui uma nova reserva de área
+			comum.
+		</p>
+		<p>
+			<a href="http://localhost:8080/reservasareascomuns/:id/excluir"><b>DELETE
+					/reservasareascomuns/:id/excluir</b></a>: Exclui uma reserva de área comum
+			pelo ID.
+		</p>
+		<p>
+			<a href="http://localhost:8080/reservasareascomuns/:id"><b>GET
+					/reservasareascomuns/:id</b></a>: Retorna os detalhes de uma reserva de
+			área comum pelo ID.
+		</p>
+
+		<h3>Spark</h3>
+		<p>Todas as rotas foram implementadas utilizando o SparkJava</p>
+		>
+	</section>
+	<footer>
+		<p>&copy; 2024 Controle Condomínio APP</p>
+	</footer>
+</body>
+</html>
+

@@ -1,14 +1,9 @@
 package controleCondominioApp.model.Loader;
 
-import controleCondominioApp.model.domain.Morador;
-import controleCondominioApp.model.domain.Veiculo;
-import controleCondominioApp.model.service.MoradorService;
-import controleCondominioApp.model.service.VeiculoService;
-
 public class MoradorEVeiculoLoader {
 
 	public static void main(String[] args) {
-	
+	/*
 		Morador morador1 = new Morador("Mauro Silva", "219692223", "1509487023", "Mauro@empresa.com","AP 101",true,null);
 
 		Morador morador2 = new Morador("Muticia Oliveira", "11987654322", "2509487024", "maria@empresa.com","AP 202",true,null);
@@ -38,6 +33,6 @@ public class MoradorEVeiculoLoader {
         VeiculoService.incluir(V5);
         
    
-        
+      */  
 	}
 }

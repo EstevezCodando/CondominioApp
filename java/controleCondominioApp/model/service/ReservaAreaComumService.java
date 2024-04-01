@@ -1,39 +1,30 @@
 package controleCondominioApp.model.service;
 
-import controleCondominioApp.model.domain.ReservaAreaComum;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Optional;
+
+import controleCondominioApp.model.domain.ReservaAreaComum;
 
 public class ReservaAreaComumService {
-	private final Map<Integer, ReservaAreaComum> reservasAreaComum = new HashMap<>();
-	private Integer nextId = 0;
+	private static Map<Integer, ReservaAreaComum> reservasAreaComum = new HashMap<>();
+	private static Integer nextId = 0;
 
-	public ReservaAreaComum incluir(ReservaAreaComum reservaAreaComum) {
+	public static void incluir(ReservaAreaComum reservaAreaComum) {
 		reservaAreaComum.setId(++nextId);
 		reservasAreaComum.put(reservaAreaComum.getId(), reservaAreaComum);
-
-		// Adiciona a reserva à lista de reservas da área comum
-		reservaAreaComum.getAreaComum().getReservas().add(reservaAreaComum);
-
-		return reservaAreaComum;
 	}
 
-	public Optional<ReservaAreaComum> obterPorId(Integer id) {
-		return Optional.ofNullable(reservasAreaComum.get(id));
+	public static Collection<ReservaAreaComum> obterLista() {
+		return reservasAreaComum.values(); 
 	}
 
-	public Collection<ReservaAreaComum> obterLista() {
-		return reservasAreaComum.values();
+	public static ReservaAreaComum obterPorId(Integer id) {
+		return reservasAreaComum.get(id);
 	}
 
-	public boolean excluir(Integer id) {
-		ReservaAreaComum reserva = reservasAreaComum.remove(id);
-		if (reserva != null) {
-			reserva.getAreaComum().getReservas().remove(reserva);
-			return true;
-		}
-		return false;
+	public static void excluir(Integer id) {
+		reservasAreaComum.remove(id);
 	}
+	
 }

@@ -1,20 +1,19 @@
 package controleCondominioApp.model.controller;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import controleCondominioApp.model.domain.Funcionario;
 import controleCondominioApp.model.service.FuncionarioService;
-import controleCondominioApp.model.service.LocalDateAdapter;
+import controleCondominioApp.model.service.LocalDateTimeAdapter;
 import spark.Route;
 
 public class FuncionarioController {
-   // private static FuncionarioService funcionarioService = FuncionarioService.getInstance();
     
     private static final Gson gson = new GsonBuilder()
-            .registerTypeAdapter(LocalDate.class, new LocalDateAdapter())
+            .registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter())
             .create();
 
     public static Route obterLista = (req, res) -> {

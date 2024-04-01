@@ -1,13 +1,12 @@
 package controleCondominioApp.model.domain;
 
-
 import java.time.LocalDate;
 import java.time.Period;
 
 public class Soldo {
     public static float calcularSalario(Funcionario funcionario) {
         float salarioBase = funcionario.getSalario();
-        LocalDate dataAdmissao = funcionario.getDataAdmissao();
+        LocalDate dataAdmissao = funcionario.getDataAdmissao().toLocalDate();
         LocalDate agora = LocalDate.now();
         long anosDeCasa = Period.between(dataAdmissao, agora).getYears();
 
@@ -21,7 +20,7 @@ public class Soldo {
                 aumentoPorTurno = 0.05f * salarioBase;
                 break;
             case "Noturno":
-                aumentoPorTurno = 0.40f * salarioBase;
+                aumentoPorTurno = 0.10f * salarioBase; // Ajustado para 10% como exemplo
                 break;
         }
 

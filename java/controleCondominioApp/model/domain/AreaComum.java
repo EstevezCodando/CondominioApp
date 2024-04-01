@@ -7,15 +7,32 @@ public class AreaComum {
 	private Integer id;
 	private String nome;
 	private int capacidade;
-	private List<ReservaAreaComum> reservas = new ArrayList<>();
+	private Integer condominioId;
+	private List<ReservaAreaComum> reservaAreaComum;
 
-	public AreaComum(String nome, int capacidade) {
+	public AreaComum(String nome, int capacidade, Integer condominioId, List<ReservaAreaComum> reservaAreaComum) {
 		super();
 		this.nome = nome;
+		this.condominioId = condominioId;
 		this.capacidade = capacidade;
+		this.reservaAreaComum = new ArrayList<>();
 	}
 	public AreaComum() {}
+	
 
+	public List<ReservaAreaComum> getReservaAreaComum() {
+		return reservaAreaComum;
+	}
+	public void setReservaAreaComum(List<ReservaAreaComum> reservaAreaComum) {
+		this.reservaAreaComum = reservaAreaComum;
+	}
+	
+	public Integer getCondominioId() {
+		return condominioId;
+	}
+	public void setCondominio(Integer condominioId) {
+		this.condominioId = condominioId;
+	}
 	public Integer getId() {
 		return id;
 	}
@@ -40,25 +57,10 @@ public class AreaComum {
 		this.capacidade = capacidade;
 	}
 
-	public List<ReservaAreaComum> getReservas() {
-		return reservas;
-	}
-
-	public void setReservas(List<ReservaAreaComum> reservas) {
-		this.reservas = reservas;
-	}
-
-	public void addReserva(ReservaAreaComum reserva) {
-		reservas.add(reserva);
-	}
-
-	public void removeReserva(ReservaAreaComum reserva) {
-		reservas.remove(reserva);
-	}
 
 	@Override
 	public String toString() {
-		return "AreaComum [nome=" + nome + ", capacidade=" + capacidade + "]";
+		return "AreaComum [Nome:" + nome + ", Capacidade=" + capacidade + ", Reservas: "+ reservaAreaComum +  " ]";
 	}
 
 }
