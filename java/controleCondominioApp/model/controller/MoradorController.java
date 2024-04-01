@@ -23,11 +23,12 @@ public class MoradorController {
     };
 
     // Incluir
-    public static  Route incluir = (req, res) -> {
-    	Morador novoMorador = new Morador();
-		MoradorService.incluir(novoMorador);
-        return "Morador: " + novoMorador.getNome() + " ID: " + novoMorador.getId() + " Incluído com Sucesso";
-    };
+    	public static Route incluir = (req, res) -> {
+    	    Morador novoMorador = gson.fromJson(req.body(), Morador.class);
+    	    MoradorService.incluir(novoMorador);
+    	    return "Morador: " + novoMorador.getNome() + " ID: " + novoMorador.getId() + " Incluído com Sucesso";
+    	};
+
 
     //Excluir
     public static Route excluir = (req, res) -> {

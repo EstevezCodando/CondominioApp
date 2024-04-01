@@ -1,57 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <title>Controle Condomínio APP</title>
-     <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Controle Condomínio APP</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="condominios/lista">Condominios</a></li>
-                <li><a href="moradores/lista">Moradores</a></li>
-                <li><a href="funcionarios/lista">Funcionarios</a></li>
-                <li><a href="visitantes/lista">Funcionarios</a></li>
-                <li><a href="areacomuns/lista">Areas Comum</a></li>
-                <li><a href="reserva/lista">Reservas</a></li>
-                <li><a href="api">Uso da API</a></li>
-                <li><a href="sparkjava">SparkJava</a></li>
-            </ul>
-        </nav>
-    <img src="img/infnet_logo.jpg" alt="Instituto Infnet Logo" class="responsive-logo">
-    </header>
-     
-    <section id="home">
-        <h1>Controle Condomínio APP</h1>
-        <p>O objetivo desta aplicação é facilitar o controle das informações de um determinado condomínio, armazenando informações relevantes quanto aos moradores, visitantes, funcionários, reserva de áreas comuns, etc. Além disso, é possível implementar muitas outras funcionalidades.</p>
-    </section>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="condominios/lista">Condominios</a></li>
+				<li><a href="moradores/lista">Moradores</a></li>
+				<li><a href="funcionarios/lista">Funcionarios</a></li>
+				<li><a href="visitantes/lista">Funcionarios</a></li>
+				<li><a href="areascomuns/lista">Areas Comum</a></li>
+				<li><a href="reservasareascomuns/lista">Reservas</a></li>
+				<li><a href="api">Uso da API</a></li>
+				<li><a href="sparkjava">SparkJava</a></li>
+			</ul>
+		</nav>
+		<img src="img/infnet_logo.jpg" alt="Instituto Infnet Logo"
+			class="responsive-logo">
+	</header>
 
-    <section id="sobre">
-        <h2>Sobre o Projeto</h2>
-        <p>Este Projeto foi Desenvolvido pelo Al Jean Michael Estevez Alvarez, como Projeto Final (AT)</p>>
-        <p>Controle Condomínio APP é uma aplicação desenvolvida para otimizar a gestão condominial, permitindo um controle eficiente de todas as áreas do condomínio.</p>
-    </section>
+	<section id="home">
+		<h1>Controle Condomínio APP</h1>
+		<p>O objetivo desta aplicação é facilitar o controle das
+			informações de um determinado condomínio, armazenando informações
+			relevantes quanto aos moradores, visitantes, funcionários, reserva de
+			áreas comuns, etc.</p>
+	</section>
 
-    <section id="funcionalidades">
-        <h2>Funcionalidades Principais</h2>
-        <ul>
-            <li>Gestão de Moradores</li>
-            <li>Controle de Visitantes</li>
-            <li>Administração de Funcionários</li>
-            <li>Reserva de Áreas Comuns</li>
-            <li>Gerenciamento Financeiro do Condomínio</li>
-        </ul>
-    </section>
+	<section id="sobre">
+		<h2>Sobre o Projeto</h2>
+		<p>Este Projeto foi Desenvolvido pelo Al Jean Michael Estevez
+			Alvarez, como Projeto Final (AT) da Disciplina Desenvolvimento de
+			Serviços Web e Testes com Java</p>
+		<p>Ministrada pelo Professor Elberth.</p>
+		>
+		<p>Controle Condomínio APP é uma aplicação desenvolvida para
+			otimizar a gestão condominial, permitindo um controle eficiente de
+			todas as áreas do condomínio.</p>
+	</section>
+	<section id="UML">
+		<h2>Diagrama UML</h2>
+		<p> Resumo geral da aplicação desenvolvida.</p>
+		<img src="img/DiagramaUML.jpg" alt="Diagrama UML" class="img">
+	</section>
 
-    <section id="api">
-        <h2>Uso da API</h2>
-        <p>Esta seção explicará o funcionamento da API, incluindo as rotas criadas e como interagir com elas para o melhor aproveitamento da aplicação.</p>
-    </section>
+	<section id="funcionalidades">
+		<h2>Funcionalidades Principais</h2>
+		<ul>
+			<li>Gestão de Moradores</li>
+			<li>Controle de Visitantes</li>
+			<li>Administração de Funcionários</li>
+			<li>Reserva de Áreas Comuns</li>
+			<li>Gerenciamento Financeiro do Condomínio</li>
+		</ul>
+	</section>
 
-    <footer>
-        <p>&copy; 2024 Controle Condomínio APP</p>
-    </footer>
+	<section id="api">
+		<h2>Uso da API</h2>
+		<p>Na seção <a href="/api">Uso da API</a> temos as Rotas e os tipos para o funcionamento da API.</p>
+	</section>
+	<section id="Regras de negocio">
+		<h2>Regras de Negocio</h2>
+		<p>Um funcionario recebe adicional de 15% de seu salario a cada 5 anos de casa</p>
+		<p>Os Funcionarios que trabalham no turno noturno recebem um adicional de 30% de seu salario.</p>
+		<p> É possivel associar e dessociar um veiculo de um Visitante, Morador ou Funcionario</p>
+	
+	</section>
+
+	<footer>
+		<p>&copy; 2024 Controle Condomínio APP</p>
+	</footer>
 </body>
 </html>

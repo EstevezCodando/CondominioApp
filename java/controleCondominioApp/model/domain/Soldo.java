@@ -20,7 +20,7 @@ public class Soldo {
                 aumentoPorTurno = 0.05f * salarioBase;
                 break;
             case "Noturno":
-                aumentoPorTurno = 0.10f * salarioBase; // Ajustado para 10% como exemplo
+                aumentoPorTurno = 0.30f * salarioBase; 
                 break;
         }
 
