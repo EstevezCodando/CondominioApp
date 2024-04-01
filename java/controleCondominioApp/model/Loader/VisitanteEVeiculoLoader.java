@@ -3,8 +3,10 @@ package controleCondominioApp.model.Loader;
 import java.time.LocalDateTime;
 import java.util.Collections;
 
+import controleCondominioApp.model.domain.Morador;
 import controleCondominioApp.model.domain.Veiculo;
 import controleCondominioApp.model.domain.Visitante;
+import controleCondominioApp.model.service.MoradorService;
 import controleCondominioApp.model.service.VeiculoService;
 import controleCondominioApp.model.service.VisitanteService;
 
@@ -12,10 +14,12 @@ public class VisitanteEVeiculoLoader {
 
 	public static void main(String[] args) {
 		
-		LocalDateTime h1 = LocalDateTime.of(2024, 1, 5, 18, 0);
+		Morador morador7 = new Morador("Choque de Cultura Costa", "119876524324", "55094873023", "suares@empresa.com","APT 402",false,null);
+		MoradorService.incluir(morador7);
+		
 	
 		Visitante visitante1 = new Visitante("Julinho da Van Silva", "219692223", "15094822023", "Julin@empresa.com",
-                LocalDateTime.of(2024, 1, 1, 10, 0), LocalDateTime.of(2024, 1, 1, 12, 0), null, "AP 101", Collections.emptyList());
+                LocalDateTime.of(2024, 1, 1, 10, 0), LocalDateTime.of(2024, 1, 1, 12, 0), morador7, "AP 101", Collections.emptyList());
 
         Visitante visitante2 = new Visitante("Ernestinho menino Oliveira", "11987654322", "25093287024", "Ernesto@empresa.com",
                 LocalDateTime.of(2024, 1, 5, 14, 0), LocalDateTime.of(2024, 1, 5, 18, 0), null, "AP 202", Collections.emptyList());

@@ -1,7 +1,6 @@
 package controleCondominioApp.model.domain;
 
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -88,14 +87,6 @@ public class Funcionario extends Pessoa {
 
 	public void setDataAdmissao(LocalDate dataAdmissao) {
 		this.dataAdmissao = dataAdmissao;
-	}
-
-	// Método para obter a data de admissão como String
-	public String getDataAdmissaoAsString() {
-		if (dataAdmissao == null) {
-			return null;
-		}
-		return dataAdmissao.format(DateTimeFormatter.ISO_LOCAL_DATE);
 	}
 	
 	

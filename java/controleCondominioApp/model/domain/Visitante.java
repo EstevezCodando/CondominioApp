@@ -1,7 +1,6 @@
 package controleCondominioApp.model.domain;
 
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -78,19 +77,6 @@ public class Visitante extends Pessoa {
 
 	public void setObservacoes(String observacoes) {
 		this.observacoes = observacoes;
-	}
-	
-	public String getEntradaString() {
-		if (entrada == null) {
-			return null;
-		}
-		return entrada.format(DateTimeFormatter.ISO_LOCAL_DATE);
-	}
-	public String getSaidaString() {
-		if (saida == null) {
-			return null;
-		}
-		return saida.format(DateTimeFormatter.ISO_LOCAL_DATE);
 	}
 
 	@Override
