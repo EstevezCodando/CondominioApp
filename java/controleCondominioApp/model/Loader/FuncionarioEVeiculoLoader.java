@@ -101,8 +101,6 @@ public class FuncionarioEVeiculoLoader {
 
 		VeiculoService.incluir(V1);
 		VeiculoService.incluir(V2);
-		VeiculoService.incluir(V3);
-		VeiculoService.incluir(V4);
 		VeiculoService.incluir(V5);
 
 	}
