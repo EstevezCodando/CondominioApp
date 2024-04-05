@@ -12,10 +12,15 @@ Este projeto, foi desenvolvido para conclusão da disciplina de Java do curso de
 ## Tecnologias Utilizadas
 - **Java**: Linguagem de programação utilizada para o desenvolvimento do sistema.
 - **Spark Java**: Framework leve para a criação de aplicações web e APIs RESTful de maneira simples e rápida.
+- **GSON**: Biblioteca Java para conversão entre objetos Java e sua representação em JSON.
+- **Log4j SLF4J Implementation**: Provedor de logging para o projeto, permitindo uma melhor gestão de logs.
+- **Unirest-Java**: Biblioteca leve para HTTP requests, facilitando a comunicação com APIs externas.
 - **JSON**: Formato de intercâmbio de dados, utilizado para a comunicação entre o backend e os possíveis consumidores da API.
 
 ## Execução do Projeto
 Para executar o projeto, clone o repositório do GitHub e configure o ambiente de desenvolvimento com JDK e Spark Java. As instruções detalhadas para configuração e execução estão disponíveis no repositório.
+
+
 
 ## Desenvolvimento e Contribuição
 O projeto foi desenvolvido como parte dos requisitos da disciplina Desenvolvimento de Serviços Web e Testes com Java. Sugestões e contribuições são bem-vindas para aprimorar a funcionalidade e a performance do sistema.
