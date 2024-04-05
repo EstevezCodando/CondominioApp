@@ -1,7 +1,7 @@
 # Controle de Condomínio com Spark Java
 
 ## Sobre o Projeto
-Este projeto, foi desenvolvido para conclusão da disciplina de Java do curso de Engenharia de Software no Infnet sob orientação do professor Elberth, visa o controle eficiente de condomínios. Implementado em Java e utilizando o framework Spark Java, o sistema fornece uma API RESTful simples, oferecendo funcionalidades como gestão de moradores, veículos, funcionários, áreas comuns, e reservas.
+Este projeto, foi desenvolvido para conclusão da disciplina Desenvolvimento de Serviços Web e Testes com Java do curso de Engenharia de Software no Infnet sob orientação do professor Elberth, visa o controle eficiente de condomínios. Implementado em Java e utilizando o framework Spark Java, o sistema fornece uma API RESTful simples, oferecendo funcionalidades como gestão de moradores, veículos, funcionários, áreas comuns, e reservas.
 
 ## Funcionalidades
 - **Gestão de Moradores**: Cadastro e controle de moradores, com gerenciamento de suas informações e veículos associados.
